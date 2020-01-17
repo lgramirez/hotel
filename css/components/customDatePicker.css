@@ -1,0 +1,158 @@
+.custom-date-picker {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+.calendar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 20;
+    user-select: none;
+    border: 0.1rem solid #eee;
+}
+
+.calendar.active {
+    display: block;
+}
+
+.calendar__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.1rem solid #eee;
+    font-weight: bold;
+}
+
+.calendar__heading__arrows {
+    width: 1.75rem;
+    height: 1.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #313131;
+    font-size: 1rem;
+}
+
+.calendar__heading__arrows:hover {
+    background-color: #f3f3f3;
+}
+
+.calendar__heading__arrows:active {
+    background-color: #00ca85;
+}
+
+.calendar__days-of-week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0.5rem 0;
+}
+
+.calendar__days-of-week__letter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #313131;
+    font-weight: bold;
+}
+
+.calendar__days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    height: 10rem;
+}
+
+.calendar__days__day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #313131;
+}
+
+.calendar__days__day.monday {
+    grid-column: -8 / -7;
+}
+
+.calendar__days__day.tuesday {
+    grid-column: -7 / -6;
+}
+
+.calendar__days__day.wednesday {
+    grid-column: -6 / -5;
+}
+
+.calendar__days__day.thursday {
+    grid-column: -5 / -4;
+}
+
+.calendar__days__day.friday {
+    grid-column: -4 / -3;
+}
+
+.calendar__days__day.saturday {
+    grid-column: -3 / -2;
+}
+
+.calendar__days__day.sunday {
+    grid-column: -2 / -1;
+}
+
+.calendar__days__day.selected {
+    background-color: #00ca85;
+}
+
+
+/* small devices portrait tablets and large phones 600px and UP */
+@media (min-width: 640px){
+
+}
+
+/* medium devices landscape tablets 768px and UP */
+@media (min-width: 768px){
+    
+}
+
+/* Large devices laptops, desktops 1024px and UP */
+@media (min-width: 1024px){
+    .calendar {
+        min-width: 20rem;
+        max-width: 100%;
+        border: 0.2rem solid #eee;
+    }
+
+    .calendar__heading {
+        border-bottom: 0.2rem solid #eee;
+        font-size: 1.4rem;
+    }
+
+    .calendar__heading__arrows {
+        width: 3rem;
+        height: 4.5rem;
+        font-size: 2rem;
+    }
+
+    .calendar__days-of-week {
+        padding: 1rem 0;
+    }
+
+    .calendar__days-of-week__letter {
+        font-size: 1.2rem;
+    }
+
+    .calendar__days {
+        height: 20rem;
+    }
+
+    .calendar__days__day {
+        font-size: 1.2rem;
+    }
+}
+
+/* Extra large devices large laptops, desktops 1200 and UP */
+@media (min-width: 1200px){
+    
+}

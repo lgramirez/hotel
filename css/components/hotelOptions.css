@@ -1,0 +1,274 @@
+.hotel-options-section {
+    height: 40rem;
+    width: 100%;
+    padding: 1.75rem 0;
+    /* background-color: #eee; */
+}
+
+.hotel-options-section__row {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.hotel-options-section__row__first-element {
+    display: grid;
+    grid-template-columns: 4rem auto;
+    grid-template-rows: 2rem 7rem;
+}
+
+.hotel-options-section__row__first-element__icon {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 0 auto;
+    color: #7f82f0;
+    transition: all .5s;
+}
+
+.hotel-options-section__row__first-element__icon:hover {
+    color: #5ad2d4;
+}
+
+.hotel-options-section__row__first-element__h3 {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    margin: auto auto;
+}
+
+.hotel-options-section__row__first-element__paragraph {
+    font-size: 0.65rem;
+    line-height: 1.2rem;
+    grid-column: 1/3;
+    margin: auto auto;
+}
+
+.hotel-options-section__row__second-element {
+    display: grid;
+    grid-template-columns: 4rem auto;
+    grid-template-rows: 2rem 7rem;
+}
+
+.hotel-options-section__row__second-element__icon {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 0 auto;
+    color: #7f82f0;
+    transition: all .5s;
+}
+
+.hotel-options-section__row__second-element__icon:hover {
+    color: #5ad2d4;
+}
+
+.hotel-options-section__row__second-element__h3 {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    margin: auto auto;
+}
+
+.hotel-options-section__row__second-element__paragraph {
+    font-size: 0.65rem;
+    line-height: 1.2rem;
+    grid-column: 1/3;
+    margin: auto auto;
+}
+
+.hotel-options-section__row__third-element {
+    display: grid;
+    grid-template-columns: 4rem auto;
+    grid-template-rows: 2rem 7rem;
+}
+
+.hotel-options-section__row__third-element__icon {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 0 auto;
+    color: #7f82f0;
+    transition: all .5s;
+}
+
+.hotel-options-section__row__third-element__icon:hover {
+    color: #5ad2d4;
+}
+
+.hotel-options-section__row__third-element__h3 {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    margin: auto auto;
+}
+
+.hotel-options-section__row__third-element__paragraph {
+    font-size: 0.65rem;
+    line-height: 1.2rem;
+    grid-column: 1/3;
+    margin: auto auto;
+}
+
+.hotel-options-section__row__fourth-element {
+    display: grid;
+    grid-template-columns: 4rem auto;
+    grid-template-rows: 2rem 7rem;
+}
+
+.hotel-options-section__row__fourth-element__icon {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 0 auto;
+    color: #7f82f0;
+    transition: all .5s;
+}
+
+.hotel-options-section__row__fourth-element__icon:hover {
+    color: #5ad2d4;
+}
+
+.hotel-options-section__row__fourth-element__h3 {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    margin: auto auto;
+}
+
+.hotel-options-section__row__fourth-element__paragraph {
+    font-size: 0.65rem;
+    line-height: 1.2rem;
+    grid-column: 1/3;
+    margin: auto auto;
+}
+
+/* small devices portrait tablets and large phones 600px and UP */
+@media (min-width: 640px){
+}
+
+/* medium devices landscape tablets 768px and UP */
+@media (min-width: 768px){
+    .hotel-options-section {
+        height: 22.5rem;
+    }
+    
+    .hotel-options-section__row {
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 9rem);
+        gap: 1rem;
+    }
+}
+
+/* Large devices laptops, desktops 1024px and UP */
+@media (min-width: 1024px){
+    .hotel-options-section {
+        height: 27rem;
+        padding: 3.5rem 0;
+    }
+
+    .hotel-options-section__row {
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+
+    .hotel-options-section__row__first-element {
+        display: grid;
+        grid-template-columns: 6rem auto;
+        grid-template-rows: 4rem 16rem;
+    }
+    
+    .hotel-options-section__row__first-element__icon {
+        font-size: 4rem;
+        line-height: 4rem;
+        margin: 0 auto;
+    }
+    
+    .hotel-options-section__row__first-element__h3 {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        margin: auto auto;
+    }
+    
+    .hotel-options-section__row__first-element__paragraph {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        grid-column: 1/3;
+        margin: auto auto;
+    }
+    
+    .hotel-options-section__row__second-element {
+        display: grid;
+        grid-template-columns: 6rem auto;
+        grid-template-rows: 4rem 16rem;
+    }
+    
+    .hotel-options-section__row__second-element__icon {
+        font-size: 4rem;
+        line-height: 4rem;
+        margin: 0 auto;
+    }
+    
+    .hotel-options-section__row__second-element__h3 {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        margin: auto auto;
+    }
+    
+    .hotel-options-section__row__second-element__paragraph {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        grid-column: 1/3;
+        margin: auto auto;
+    }
+    
+    .hotel-options-section__row__third-element {
+        display: grid;
+        grid-template-columns: 6rem auto;
+        grid-template-rows: 4rem 16rem;
+    }
+    
+    .hotel-options-section__row__third-element__icon {
+        font-size: 4rem;
+        line-height: 4rem;
+        margin: 0 auto;
+    }
+    
+    .hotel-options-section__row__third-element__h3 {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        margin: auto auto;
+    }
+    
+    .hotel-options-section__row__third-element__paragraph {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        grid-column: 1/3;
+        margin: auto auto;
+    }
+    
+    .hotel-options-section__row__fourth-element {
+        display: grid;
+        grid-template-columns: 6rem auto;
+        grid-template-rows: 4rem 16rem;
+    }
+    
+    .hotel-options-section__row__fourth-element__icon {
+        font-size: 4rem;
+        line-height: 4rem;
+        margin: 0 auto;
+    }
+    
+    .hotel-options-section__row__fourth-element__h3 {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        margin: auto auto;
+    }
+    
+    .hotel-options-section__row__fourth-element__paragraph {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        grid-column: 1/3;
+        margin: auto auto;
+    }
+}
+
+/* Extra large devices large laptops, desktops 1200 and UP */
+@media (min-width: 1200px){
+    
+}

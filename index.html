@@ -1,0 +1,531 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Greek Hotel - Kallyas</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/carousel.css">
+  <link rel="stylesheet" href="css/components/reservationForm.css">
+  <link rel="stylesheet" href="css/components/h1Heading.css">
+  <link rel="stylesheet" href="css/components/customDatePicker.css">
+  <link rel="stylesheet" href="css/components/hotelOptions.css">
+  <link rel="stylesheet" href="css/components/gallery.css">
+  <link rel="stylesheet" href="css/components/infoWithPhotoSection.css">
+  <link rel="stylesheet" href="css/components/promotions.css">
+  <link rel="stylesheet" href="css/components/services.css">
+  <link rel="stylesheet" href="css/components/contact.css">
+  <link rel="stylesheet" href="css/fontawesome/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito|Roboto&display=swap" rel="stylesheet">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <style>
+      #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
+    </style>
+
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- HEADER -->
+  <header>
+    <div class="container--full-width">
+      <nav>
+        <div class="nav__logo-container">
+          <a href="index.html">
+            <img class="nav__logo-container__logo" src="logo.png" alt="Greek Hotel Logo">
+          </a>
+        </div>
+        <div class="nav__telephone-container">
+          <i class="fas fa-phone-alt"></i>
+          <span>+59170234629</span>
+        </div>
+        <div class="nav__menu-icon-container">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav__menu-list">
+          <div class="menu-icons close">
+            <i class="fas fa-times-circle"></i>
+          </div>
+          <li class="nav-item">
+            <a href="#" class="nav-link current">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Habitaciones</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contactanos</a>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+59170234629</span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <div class="container--full-width">
+
+      <!-- carousel -->
+      <div class="carousel show-on-scroll">
+        <!-- <button class="carousel__button carousel__button--left">
+          <i class="fas fa-chevron-left"></i>
+        </button> -->
+        <div class="carousel__track-container">
+          <div class="carousel__overlay"></div>
+            <ul class="carousel__track">
+              <li class="carousel__slide current-slide">
+                <img class="carousel__image" src="img/adult-book-series-college-545068.jpg" alt="">
+              </li>
+              <li class="carousel__slide">
+                <img class="carousel__image" src="img/adult-businessman-close-up-374820.jpg" alt="">
+              </li>
+              <li class="carousel__slide">
+                <img class="carousel__image" src="img/aerial-desk-device-1011329.jpg" alt="">
+              </li>
+              <li class="carousel__slide">
+                <img class="carousel__image" src="img/books-bookshelf-education-159621.jpg" alt="">
+              </li>
+            </ul>
+          </div>
+          <!-- <button class="carousel__button  carousel__button--right">
+            <i class="fas fa-chevron-right"></i>
+          </button> -->
+          <div class="carousel__nav carousel__nav--right">
+            <button class="carousel__indicator carousel__indicator--right current-slide"></button>
+            <button class="carousel__indicator carousel__indicator--right"></button>
+            <button class="carousel__indicator carousel__indicator--right"></button>
+            <button class="carousel__indicator carousel__indicator--right"></button>
+          </div>
+      </div>
+
+      <!-- check for reservations form -->
+      <section class="reservations-section">
+        <div class="reservations-widget">
+          <h3 class="reservations-widget__heading">BUSCA TU HABITACIÓN</h3>
+          <form id="form-search-rooms" action="" class="reservation-widget__form">
+            <label for="input-arrive-date" class="reservation-widget__form__arrive-label">
+              <span class="reservation-widget__form__arrive-label__span">Fecha de Llegada</span>
+              <input id="input-arrive-date" class="reservation-widget__form__arrive-label__input custom-date-picker" type="text" placeholder="Llegada" />
+              <div id="calendar-1" class="calendar">
+                <div class="calendar__heading">
+                  <div id="prev-arrow-1" class="calendar__heading__arrows calendar__heading__arrows--prev-mth">&lt</div>
+                  <div id="calendar-heading-1" class="calendar__heading__month"></div>
+                  <div id="next-arrow-1" class="calendar__heading__arrows calendar__heading__arrows--next-mth">&gt</div>
+                </div>
+                <div class="calendar__days-of-week">
+                  <div class="calendar__days-of-week__letter">Lu</div>
+                  <div class="calendar__days-of-week__letter">Ma</div>
+                  <div class="calendar__days-of-week__letter">Mi</div>
+                  <div class="calendar__days-of-week__letter">Ju</div>
+                  <div class="calendar__days-of-week__letter">Vi</div>
+                  <div class="calendar__days-of-week__letter">Sa</div>
+                  <div class="calendar__days-of-week__letter">Do</div>
+                </div>
+                <div id="calendar-days-1" class="calendar__days"></div>
+              </div>
+            </label>
+            <label for="input-departure-date" class="reservation-widget__form__departure-label">
+              <span class="reservation-widget__form__departure-label__span">Fecha de Salida</span>
+              <div class="date-picker">
+                <input id="input-departure-date" class="reservation-widget__form__departure-label__input selected-date custom-date-picker" type="text" placeholder="Salida">
+                <div id="calendar-2" class="calendar">
+                  <div class="calendar__heading">
+                    <div id="prev-arrow-2" class="calendar__heading__arrows calendar__heading__arrows--prev-mth">&lt</div>
+                    <div id="calendar-heading-2" class="calendar__heading__month"></div>
+                    <div id="next-arrow-2" class="calendar__heading__arrows calendar__heading__arrows--next-mth">&gt</div>
+                  </div>
+                  <div class="calendar__days-of-week">
+                    <div class="calendar__days-of-week__letter">Lu</div>
+                    <div class="calendar__days-of-week__letter">Ma</div>
+                    <div class="calendar__days-of-week__letter">Mi</div>
+                    <div class="calendar__days-of-week__letter">Ju</div>
+                    <div class="calendar__days-of-week__letter">Vi</div>
+                    <div class="calendar__days-of-week__letter">Sa</div>
+                    <div class="calendar__days-of-week__letter">Do</div>
+                  </div>
+                  <div id="calendar-days-2" class="calendar__days"></div>
+                </div>
+              </div>
+            </label>
+            <label for="select-adults" class="reservation-widget__form__adults-select">
+              <span class="reservation-widget__form__adults-select__span">Adultos</span>
+              <select id="select-adults" class="reservation-widget__form__adults-select__select" name="select">
+                <option value="value1" selected>Adultos</option> 
+                <option value="value2" >1</option>
+                <option value="value3">2</option>
+                <option value="value3">3</option>
+                <option value="value3">4</option>
+              </select>
+            </label>
+            <label for="select-children" class="reservation-widget__form__children-select">
+              <span class="reservation-widget__form__children-select__span">Niños</span>
+              <select id="select-children" class="reservation-widget__form__children-select__select" name="select">
+                <option value="value2" selected>Niños</option>
+                <option value="value3">1</option>
+                <option value="value1">2</option> 
+                <option value="value1">3</option> 
+                <option value="value1">4</option> 
+              </select>
+            </label>
+            <button class="reservations-widget__button" type="submit">VERIFICAR</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- h1 heading -->
+      <section class="h1-heading-section">
+        <div class="h1-heading-section__row-content">
+          <h1 class="h1-heading-section__row-content__heading">BIENVENIDO</h1>
+          <p class="h1-heading-section__row-content__content">
+              Alojarse aquí no tiene que costar una fortuna. ¡Reserve su estadía con nosotros y reciba una de las tarifas más bajas de cualquier albergue en la ciudad!
+          </p>
+        </div>
+      </section>
+
+      <!-- hotel options -->
+      <section class="hotel-options-section">
+        <div class="hotel-options-section__row">
+          <div class="hotel-options-section__row__first-element">
+            <i class="fas fa-concierge-bell hotel-options-section__row__first-element__icon"></i>
+            <h3 class="hotel-options-section__row__first-element__h3">Hotel y Spa</h3>
+            <p class="hotel-options-section__row__first-element__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quis rerum quos tempore. Maxime ex debitis quod culpa dicta unde, magnam odit nesciunt porro labore fugit, suscipit vero similique ipsum!</p>
+          </div>
+          <div class="hotel-options-section__row__second-element">
+            <i class="fas fa-bed hotel-options-section__row__second-element__icon"></i>
+            <h3 class="hotel-options-section__row__second-element__h3">Habitaciones</h3>
+            <p class="hotel-options-section__row__second-element__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="hotel-options-section__row__third-element">
+            <i class="fas fa-utensils hotel-options-section__row__third-element__icon"></i>
+            <h3 class="hotel-options-section__row__third-element__h3">Comodidades</h3>
+            <p class="hotel-options-section__row__third-element__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="hotel-options-section__row__fourth-element">
+            <i class="fas fa-swimming-pool hotel-options-section__row__fourth-element__icon"></i>
+            <h3 class="hotel-options-section__row__fourth-element__h3">Actividades</h3>
+            <p class="hotel-options-section__row__fourth-element__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- gallery -->
+      <section class="gallery-section">
+        <div class="gallery__header">
+          <h2 class="gallery__header-h2">Galeria</h2>
+          <p class="gallery__header-paragraph">Estas son fotos reales de nuestros clientes</p>
+        </div>
+        <div class="gallery__content">
+          <div class="gallery__carousel">
+            <button class="gallery-carousel__button gallery-carousel__button--left">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="gallery-carousel__container">
+              <div class="carousel__container-slide current-container">
+                <img class="gallery__image" src="img/gallery/brown-concrete-tower-at-night-3435931.jpg" alt="">
+                <img class="gallery__image" src="img/gallery/low-angle-photography-of-cathedral-3234167.jpg" alt="">
+                <img class="gallery__image" src="img/gallery/photo-of-gift-box-under-the-christmas-tree-3388335.jpg" alt="">
+              </div>
+              <div class="carousel__container-slide">
+                <img class="gallery__image" src="img/gallery/photo-of-wooden-house-in-forest-3363341.jpg" alt="">
+                <img class="gallery__image" src="img/gallery/red-suspension-bridge-3493772.jpg" alt="">
+                <img class="gallery__image" src="img/gallery/top-view-of-a-lake-on-top-of-a-mountain-close-to-a-cliff-by-3393450.jpg" alt="">
+              </div>
+              <div class="carousel__container-slide">
+                <img class="gallery__image" src="img/gallery/seaport-during-daytime-132037.jpg" alt="">
+                <img class="gallery__image" src="img/gallery/blue-sky-clear-sky-cold-fog-346529.jpg" alt="">
+                <img class="gallery__image" src="img/gallery/flock-of-birds-917494.jpg" alt="">
+              </div>
+            </div>
+            <button class="gallery-carousel__button gallery-carousel__button--right">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="gallery__description">
+            <div>
+              <h3 class="gallery__description-h3">Hotel y Spa en Tarija</h3>
+              <p class="gallery__description-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+            </div>
+            <div class="gallery__container-button">
+              <button class="gallery__button">Ver Todo</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- normal information container -->
+      <section class="info-with-photo__section">
+        <div class="info-with-photo__container">
+          <div class="info-with-photo__container-left">
+            <h3 class="info-with-photo__h3">Una imagen vale más que mil palabras...</h3>
+            <p class="info-with-photo__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis accusantium doloremque cum quisquam autem quod nostrum veritatis, sint, in, perspiciatis velit quos? Perspiciatis magni deleniti cumque temporibus esse eaque ex!</p>
+            <p class="info-with-photo__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis accusantium doloremque cum quisquam autem quod nostrum veritatis, sint, in, perspiciatis velit quos? Perspiciatis magni deleniti cumque temporibus esse eaque ex!</p>
+            <a class="btn info-with-photo__button">Ver Todo</a>
+          </div>
+          <div class="info-with-photo__container-right">
+            <img class="info-with-photo__img" src="./img/brown-lounge-chair-on-side-of-swimming-pool-122244.jpg" alt="">
+          </div>
+        </div>
+      </section>
+
+      <!-- promotions -->
+      <section class="promotions__section">
+        <div class="promotions__container">
+          <div class="promotions__header">
+            <h2 class="promotions__h2">PROMOCIONES</h2>
+            <p class="promotions__paragraph">Tenemos algunas promociones especiales para nuestros fieles clientes.</p>
+          </div>
+          <div class="promotions__content">
+            <div class="promotion">
+              <img class="promotion__img" src="./img/promo/an-on-treadmill-1954524.jpg" alt="">
+              <h3 class="promotion__h3">Gimnasio gratis</h3>
+              <p class="promotion__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            </div>
+            <div class="promotion">
+              <img class="promotion__img" src="./img/promo/pink-and-red-roses-centerpiece-near-silverwares-1045541.jpg" alt="">
+              <h3 class="promotion__h3">Cena para 2 personas</h3>
+              <p class="promotion__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            </div>
+            <div class="promotion">
+              <img class="promotion__img" src="./img/promo/person-walking-on-the-road-1563256.jpg" alt="">
+              <h3 class="promotion__h3">Paseo por la ciudad</h3>
+              <p class="promotion__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- reviews -->
+      <section style="background-color: sandybrown;">
+        <div>
+          <h3>Patricio</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- services -->
+      <section class="services__section">
+        <div class="services__container">
+          <div class="services__header">
+            <h2 class="services__h2">Servicios</h2>
+          </div>
+          <div class="services__first-row">
+            <div class="service__container">
+              <i class="fas fa-wifi service__icon"></i>
+              <h3 class="service__h3">WiFi</h3>
+              <p class="service__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
+            </div>
+            <div class="service__container">
+              <i class="fas fa-fan service__icon"></i>
+              <h3 class="service__h3">Aire Acondicionado</h3>
+              <p class="service__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
+            </div>
+            <div class="service__container">
+              <i class="fas fa-bath service__icon"></i>
+              <h3 class="service__h3">Baño Privado</h3>
+              <p class="service__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
+            </div>
+            <div class="service__container">
+              <i class="fas fa-key service__icon"></i>
+              <h3 class="service__h3">Seguro</h3>
+              <p class="service__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
+            </div>
+          </div>
+          <div class="services__second-row">
+            <div class="service__container">
+              <i class="fas fa-tv service__icon"></i>
+              <h3 class="service__h3">Pantallas Planas</h3>
+              <p class="service__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
+            </div>
+            <div class="service__container">
+              <i class="fas fa-glass-cheers service__icon"></i>
+              <h3 class="service__h3">Mini Bar Gratis</h3>
+              <p class="service__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
+            </div>
+            <div class="service__container">
+              <i class="fas fa-hotel service__icon"></i>
+              <h3 class="service__h3">Servicio a la Habitación</h3>
+              <p class="service__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
+            </div>
+            <div class="service__container">
+              <i class="fas fa-umbrella-beach service__icon"></i>
+              <h3 class="service__h3">Piscina</h3>
+              <p class="service__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- google maps widget -->
+      <section>
+        <div id="map"></div>
+      </section>
+
+      <!-- contact us form -->
+      <section class="contact__section">
+        <div class="contact__container">
+          <div class="contact__first-content">
+            <div class="contact__main-header">
+              <h2 class="contact__h2">Contáctanos</h2>
+            </div>
+            <div class="contact__info-container">
+              <div class="contact__info">
+                <i class="fas fa-home form__icon"></i>
+                <h4 class="form__h4">Hotel Julia</h4>
+                <p class="form__paragraph">Av Ferroviaria 314, Uyuni</p>
+              </div>
+              <div class="contact__info">
+                <i class="fas fa-envelope form__icon"></i>
+                <h4 class="form__h4">Email</h3>
+                <p class="form__paragraph">contacto@hoteljulia.com</p>
+              </div>
+              <div class="contact__info">
+                <i class="fas fa-phone form__icon"></i>
+                <h4 class="form__h4">Numero de Telefono</h4>
+                <p class="form__paragraph">2 6932134</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact__second-content">
+            <div class="contact__form-header">
+              <h3 class="contact__h3">Escríbenos, nos pondremos en contacto</h3>
+            </div>
+            <div class="contact__form-container">
+              <form class="contact__form" action="">
+                <div class="contact__field-container">
+                  <label for="form-name">
+                    <span>Name</span>
+                    <input id="form-name" name="form-name" type="text">
+                  </label>
+                </div>
+                <div class="contact__field-container">
+                  <label for="form-email">
+                    <span>Email</span>
+                    <input id="form-email" name="form-email" type="text">
+                  </label>
+                </div>
+                <div class="contact__field-container">
+                  <label for="form-message">
+                    <span>Message</span>
+                    <textarea name="form-message" id="form-message" cols="20" rows="5"></textarea>
+                  </label>
+                </div>
+                <button type="submit" class="contact__button">Enviar Mensaje</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- instagram widget -->
+      <section>
+        <div>
+          <h2>Instagram</h2>
+          <p>Mira algunas de nuestras imagenes de nuestra pagina de instagram. <a href="/">@greekhotel</a></p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer__menu-links">
+      <ul>
+        <li>
+          <a href="/">Inicio</a>
+        </li>
+        <li>
+          <a href="/">Habitaciones</a>
+        </li>
+        <li>
+          <a href="/">Servicios</a>
+        </li>
+        <li>
+          <a href="/">Sobre nosotros</a>
+        </li>
+        <li>
+          <a href="/">Contactanos</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h3>Siguenos:</h3>
+    </div>
+    <div>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+    </div>
+    <div>
+      <p>Copyright ® 2019 DigitalX</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script> -->
+  <script src="js/carousel.js"></script>
+  <script src="js/customDatePicker.js"></script>
+  <script src="js/gallery-carousel.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!-- <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script> -->
+
+  <!-- google maps -->
+  <!-- <script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      var uluru = {lat: -25.344, lng: 131.036};
+      // The map, centered at Uluru
+      var map = new google.maps.Map(
+          document.getElementById('map'), {zoom: 4, center: uluru});
+      // The marker, positioned at Uluru
+      var marker = new google.maps.Marker({position: uluru, map: map});
+    }
+  </script> -->
+  <!-- <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM0WNWLNZcoRQEgWRsnIlKZ1hXItOz0e4&callback=initMap">
+  </script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,357 @@
+.reservations-section {
+    background-color: #f4f4f4;
+}
+
+.reservations-widget {
+    position: relative;
+    z-index: 10;
+    width: 85%;
+    height: 25.8rem;
+    margin: -2.45rem auto 0 auto;
+    background-color: #ffffff;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    padding-bottom: 1.25rem;
+}
+
+.reservations-widget__heading {
+    height: 2.5rem;
+    margin: 0 auto;
+    padding-top: 0.7rem;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.reservation-widget__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.reservation-widget__form__arrive-label {
+    display: block;
+    width: 100%;
+    height: 3.65rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.reservation-widget__form__arrive-label::after {
+    content: '\f073';
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: normal;
+    color: #aaaaaa;
+    font-size: 0.8rem;
+    line-height: 0.7rem;
+    position: absolute;
+    top: 2.6rem;
+    right: 1rem;
+}
+
+.reservation-widget__form__arrive-label__span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.reservation-widget__form__arrive-label__input{
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.35rem 0.4rem;
+    border: none;
+    border-bottom: 0.1rem solid #E5E5E5;
+    transition: all .5s;
+}
+
+.reservation-widget__form__arrive-label__input:focus {
+    border-bottom: 0.1rem solid #222;
+}
+
+.reservation-widget__form__departure-label {
+    display: block;
+    width: 100%;
+    height: 3.65rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.reservation-widget__form__departure-label::after {
+    content: '\f073';
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: normal;
+    color: #aaaaaa;
+    font-size: 0.8rem;
+    line-height: 0.7rem;
+    position: absolute;
+    top: 2.6rem;
+    right: 1rem;
+}
+
+.reservation-widget__form__departure-label__span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.reservation-widget__form__departure-label__input {
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.35rem 0.4rem;
+    border: none;
+    border-bottom: 0.1rem solid #E5E5E5;
+    transition: all .5s;
+}
+
+.reservation-widget__form__departure-label__input:focus {
+    border-bottom: 0.1rem solid #222;
+}
+
+.reservation-widget__form__adults-select {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.reservation-widget__form__adults-select__span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.reservation-widget__form__adults-select__select {
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.35rem 0.4rem;
+    border: none;
+    border-bottom: 0.1rem solid #E5E5E5;
+    transition: all .5s;
+}
+
+.reservation-widget__form__adults-select__select:focus {
+    border-bottom: 0.1rem solid #222;
+}
+
+.reservation-widget__form__children-select {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.reservation-widget__form__children-select__span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.reservation-widget__form__children-select__select {
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.35rem 0.4rem;
+    border: none;
+    border-bottom: 0.1rem solid #E5E5E5;
+    transition: all .5s;
+}
+
+.reservation-widget__form__children-select__select:focus {
+    border-bottom: 0.1rem solid #222;
+}
+
+.reservations-widget__button {
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0;
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+    color: #ffffff;
+    background: linear-gradient(to right, #7f82f0 0%, #5ad2d4 100%);
+    box-shadow: 0rem 0.55rem 1.35rem 0rem rgba(154, 49, 188, 0.33);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.reservations-widget__button:hover {
+    opacity: 0.8;
+}
+
+.reservations-widget__button:focus {
+    opacity: 0.8;
+}
+
+/* small devices portrait tablets and large phones 600px and UP */
+@media (min-width: 640px){
+
+}
+
+/* medium devices landscape tablets 768px and UP */
+@media (min-width: 768px){
+
+}
+
+/* Large devices laptops, desktops 1024px and UP */
+@media (min-width: 1024px){
+    .reservations-widget {
+        position: relative;
+        z-index: 10;
+        width: 85%;
+        height: 16.9rem;
+        margin: -4.9rem auto 0 auto;
+        background-color: #ffffff;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .reservations-widget__heading {
+        height: 5rem;
+        padding-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        line-height: 3rem;
+    }
+
+    .reservation-widget__form {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .reservation-widget__form__arrive-label {
+        height: 7.3rem;
+        margin-bottom: 2rem;
+    }
+
+    .reservation-widget__form__arrive-label::after {
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        position: absolute;
+        top: 4.2rem;
+        right: 2rem;
+    }
+
+    .reservation-widget__form__arrive-label__span {
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+        line-height: 1.rem;
+    }
+
+    .reservation-widget__form__arrive-label__input {
+        height: 5rem;
+        padding: 0.7rem 0.8rem;
+        border: none;
+        border-bottom: 0.2rem solid #E5E5E5;
+        line-height: 2.4rem;
+        font-size: 1.5rem;
+        transition: all .5s;
+    }
+
+    .reservation-widget__form__arrive-label__input:hover {
+        border-bottom: 0.2rem solid #222;
+    }
+
+    .reservation-widget__form__departure-label {
+        height: 7.3rem;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .reservation-widget__form__departure-label::after {
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        position: absolute;
+        top: 4.2rem;
+        right: 2rem;
+    }
+
+    .reservation-widget__form__departure-label__span {
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+        line-height: 1.rem;
+    }
+
+    .reservation-widget__form__departure-label__input {
+        height: 5rem;
+        padding: 0.7rem 0.8rem;
+        border: none;
+        border-bottom: 0.2rem solid #E5E5E5;
+        line-height: 2.4rem;
+        font-size: 1.5rem;
+        transition: all .5s;
+    }
+
+    .reservation-widget__form__departure-label__input:hover {
+        border-bottom: 0.2rem solid #222;
+    }
+
+    .reservation-widget__form__adults-select {
+        height: 7.3rem;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .reservation-widget__form__adults-select__span {
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+        line-height: 1.rem;
+    }
+
+    .reservation-widget__form__adults-select__select {
+        height: 5rem;
+        padding: 0.7rem 0.8rem;
+        border: none;
+        border-bottom: 0.2rem solid #E5E5E5;
+        line-height: 2.4rem;
+        font-size: 1.5rem;
+        transition: all .5s;
+    }
+
+    .reservation-widget__form__adults-select__select:hover {
+        border-bottom: 0.2rem solid #222;
+    }
+
+    .reservation-widget__form__children-select {
+        height: 7.3rem;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .reservation-widget__form__children-select__span {
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+        line-height: 1.rem;
+    }
+
+    .reservation-widget__form__children-select__select {
+        height: 5rem;
+        padding: 0.7rem 0.8rem;
+        border: none;
+        border-bottom: 0.2rem solid #E5E5E5;
+        line-height: 2.4rem;
+        font-size: 1.5rem;
+        transition: all .5s;
+    }
+
+    .reservation-widget__form__children-select__select:hover {
+        border-bottom: 0.2rem solid #222;
+    }
+
+    .reservations-widget__button {
+        height: 5rem;
+        margin: 0 1rem;
+        margin-top: 2.4rem;
+        line-height: 2.4rem;
+        font-size: 1.4rem;
+    }
+}
+
+/* Extra large devices large laptops, desktops 1200 and UP */
+@media (min-width: 1200px){
+    
+}

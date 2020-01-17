@@ -1,0 +1,64 @@
+.h1-heading-section {
+    height: 17.5rem;
+    width: 100%;
+    background-color: #f4f4f4;
+}
+
+.h1-heading-section__row-content {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 3.25rem;
+}
+
+.h1-heading-section__row-content__heading {
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.h1-heading-section__row-content__content {
+    line-height: 1.3rem;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+/* small devices portrait tablets and large phones 600px and UP */
+@media (min-width: 640px){
+}
+
+/* medium devices landscape tablets 768px and UP */
+@media (min-width: 768px){
+    .h1-heading-section {
+        height: 14.915rem;
+    }
+}
+
+/* Large devices laptops, desktops 1024px and UP */
+@media (min-width: 1024px){
+    .h1-heading-section {
+        height: 27.23rem;
+    }
+
+    .h1-heading-section__row-content {
+        padding-top: 6.5rem;
+    }
+
+    .h1-heading-section__row-content__heading {
+        line-height: 3rem;
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    .h1-heading-section__row-content__content {
+        line-height: 2.6rem;
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 0 7rem;
+    }
+}
+
+/* Extra large devices large laptops, desktops 1200 and UP */
+@media (min-width: 1200px){
+    
+}
