@@ -30,7 +30,7 @@
 .hotel-options-section__row__first-element__h3 {
     font-size: 0.8rem;
     line-height: 0.8rem;
-    margin: auto auto;
+    margin: 0.5rem 0 0.5rem 0.5rem;
 }
 
 .hotel-options-section__row__first-element__paragraph {
@@ -61,7 +61,7 @@
 .hotel-options-section__row__second-element__h3 {
     font-size: 0.8rem;
     line-height: 0.8rem;
-    margin: auto auto;
+    margin: 0.5rem 0 0.5rem 0.5rem;
 }
 
 .hotel-options-section__row__second-element__paragraph {
@@ -92,7 +92,7 @@
 .hotel-options-section__row__third-element__h3 {
     font-size: 0.8rem;
     line-height: 0.8rem;
-    margin: auto auto;
+    margin: 0.5rem 0 0.5rem 0.5rem;
 }
 
 .hotel-options-section__row__third-element__paragraph {
@@ -123,7 +123,7 @@
 .hotel-options-section__row__fourth-element__h3 {
     font-size: 0.8rem;
     line-height: 0.8rem;
-    margin: auto auto;
+    margin: 0.5rem 0 0.5rem 0.5rem;
 }
 
 .hotel-options-section__row__fourth-element__paragraph {
@@ -181,7 +181,7 @@
     .hotel-options-section__row__first-element__h3 {
         font-size: 1.6rem;
         line-height: 1.6rem;
-        margin: auto auto;
+        margin: 1rem 0 1rem 1rem;
     }
     
     .hotel-options-section__row__first-element__paragraph {
@@ -206,7 +206,7 @@
     .hotel-options-section__row__second-element__h3 {
         font-size: 1.6rem;
         line-height: 1.6rem;
-        margin: auto auto;
+        margin: 1rem 0 1rem 1rem;
     }
     
     .hotel-options-section__row__second-element__paragraph {
@@ -231,7 +231,7 @@
     .hotel-options-section__row__third-element__h3 {
         font-size: 1.6rem;
         line-height: 1.6rem;
-        margin: auto auto;
+        margin: 1rem 0 1rem 1rem;
     }
     
     .hotel-options-section__row__third-element__paragraph {
@@ -256,7 +256,7 @@
     .hotel-options-section__row__fourth-element__h3 {
         font-size: 1.6rem;
         line-height: 1.6rem;
-        margin: auto auto;
+        margin: 1rem 0 1rem 1rem;
     }
     
     .hotel-options-section__row__fourth-element__paragraph {
