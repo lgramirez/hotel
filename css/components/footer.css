@@ -1,0 +1,165 @@
+.footer__section {
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem 0 5rem 0;
+}
+
+.footer__menu-links {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.footer__links-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__link {
+    width: 100%;
+}
+
+.footer__a {
+    display: block;
+    width: 100%;
+    font-size: 0.7rem;
+    line-height: 1.3rem;
+    text-align: center;
+    transition: all .3s;
+}
+
+.footer__a:link {
+    color: #000;
+}
+
+.footer__a:visited {
+    color: #000;
+}
+  
+.footer__a:hover {
+    color: #7f82f0;
+}
+  
+.footer__a:active {
+    color: #000;
+} 
+
+.footer__current-page {
+    font-weight: bold;
+}
+
+.footer__current-page:hover {
+    color: #000;
+}
+
+.footer__header{
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.footer__h3 { 
+    width: 100%;
+    font-size: 0.6rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer__social-container {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.footer__social-icon {
+    padding: 1.5rem;
+    color: #000;
+}
+
+.footer__company-container {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.footer__company {
+    font-size: 0.75rem;
+    line-height: 1.1rem;
+    text-align: center;
+}
+
+.footer__digitalx-link {
+    color: #000;
+}
+
+.footer__X {
+    color: #e13214;
+    font-weight: bold;
+}
+
+/* small devices portrait tablets and large phones 600px and UP */
+@media (min-width: 640px){
+
+}
+  
+/* medium devices landscape tablets 768px and UP */
+@media (min-width: 768px){
+
+}
+  
+/* Large devices laptops, desktops 1024px and UP */
+@media (min-width: 1024px){
+    .footer__section {
+        padding: 5rem 0 10rem 0;
+    }
+    
+    .footer__menu-links {
+        margin-bottom: 2rem;
+    }
+
+    .footer__links-container {
+        width: 50%;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .footer__a {
+        font-size: 1.4rem;
+        line-height: 2.6rem;
+    }
+
+    .footer__header{
+        margin-bottom: 1rem;
+    }
+    
+    .footer__h3 { 
+        font-size: 1.2rem;
+        line-height: 3rem;
+    }
+    
+    .footer__social-container {
+        margin-bottom: 1rem;
+    }
+    
+    .footer__social-icon {
+        font-size: 1.8rem;
+        line-height: 1.4rem;
+        padding: 3rem;
+    }
+    
+    .footer__company-container {
+        margin-bottom: 2rem;
+    }
+    
+    .footer__company {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+    }
+}
+  
+/* Extra large devices large laptops, desktops 1200 and UP */
+@media (min-width: 1200px){
+
+}

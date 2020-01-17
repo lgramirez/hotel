@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="css/components/promotions.css">
   <link rel="stylesheet" href="css/components/services.css">
   <link rel="stylesheet" href="css/components/contact.css">
+  <link rel="stylesheet" href="css/components/footer.css">
   <link rel="stylesheet" href="css/fontawesome/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito|Roboto&display=swap" rel="stylesheet">
 
@@ -453,43 +454,45 @@
   </main>
 
   <!-- FOOTER -->
-  <footer>
+  <footer class="footer__section">
     <div class="footer__menu-links">
-      <ul>
-        <li>
-          <a href="/">Inicio</a>
+      <ul class="footer__links-container">
+        <li class="footer__link">
+          <a class="footer__a footer__current-page" href="/">Inicio</a>
         </li>
-        <li>
-          <a href="/">Habitaciones</a>
+        <li class="footer__link">
+          <a class="footer__a" href="#">Habitaciones</a>
         </li>
-        <li>
-          <a href="/">Servicios</a>
+        <li class="footer__link">
+          <a class="footer__a" href="#">Servicios</a>
         </li>
-        <li>
-          <a href="/">Sobre nosotros</a>
+        <li class="footer__link">
+          <a class="footer__a" href="#">Sobre nosotros</a>
         </li>
-        <li>
-          <a href="/">Contactanos</a>
+        <li class="footer__link">
+          <a class="footer__a" href="#">Contáctanos</a>
         </li>
       </ul>
     </div>
-    <div>
-      <h3>Siguenos:</h3>
+    <div class="footer__header">
+      <h3 class="footer__h3">Siguénos:</h3>
     </div>
-    <div>
-      <i class="fab fa-facebook"></i>
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-twitter"></i>
+    <div class="footer__social-container">
+      <a href="https://www.facebook.com"><i class="fab fa-facebook footer__social-icon"></i></a>
+      <a href="https://www.instagram.com"><i class="fab fa-instagram footer__social-icon"></i></a>
+      <a href="https://www.twitter.com"><i class="fab fa-twitter footer__social-icon"></i></a>
     </div>
-    <div>
-      <p>Copyright ® 2019 DigitalX</p>
+    <div class="footer__company-container">
+      <p class="footer__company">Copyright ® 2019
+        <a class="footer__digitalx-link" href="https://digitalx.com.bo">Digital<span class="footer__X">X</span></a>
+      </p>
     </div>
   </footer>
 
   <!-- Scripts -->
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script> -->
+  <script src="js/main.js"></script>
   <script src="js/carousel.js"></script>
   <script src="js/customDatePicker.js"></script>
   <script src="js/gallery-carousel.js"></script>
